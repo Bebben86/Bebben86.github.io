@@ -1,14 +1,19 @@
 body {
   background-color: rgb(233, 233, 233);
-  font-family: sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: black;
   font-size: 0.8em;
   max-width: 600px;
   margin: 0 auto;
 }
-h3 {
-  color: rgb(79, 79, 112);
+h1 {
+  color: #910000;
 }
 p {
   color: black;
+  font-size: 1.5em;
+}
+
+li{
+font-size: 1.5em;
 }

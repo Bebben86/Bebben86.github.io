@@ -75,7 +75,7 @@ body {
 }
 
 .aboutMeName {
-    float: clear;
+    clear:both;
     
     font-size: 0.8em;
     font-weight: bold;
