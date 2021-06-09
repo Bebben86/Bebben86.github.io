@@ -1,7 +1,7 @@
 body {
 	background-color: white;
 	min-height: 100vh;
-	max-width: 600px; 
+	max-width: 700px; 
     margin: 0 auto;
 	color: #454545;
 	padding-bottom: 50px;
@@ -12,7 +12,7 @@ h1 {
 }
 
 p {	
-	font-family: "Ubuntu", Verdana;
+	font-family: times new roman, "Benne", Verdana;
 	font-size: 1em;
 }
 hr {
@@ -24,7 +24,7 @@ img {
 	width: 150px;
 }
 table{
-	font-family: "Ubuntu", Verdana;
+	font-family: times new roman, "Benne", Verdana;
 	font-size: 1em;
 	color: #454545;
 	border: 0px solid black;
@@ -58,6 +58,7 @@ td{
 }
 .jobTitle{
 	font-style: italic;
+	padding 0px;
 }
 .references{
 	font-weight: bold;

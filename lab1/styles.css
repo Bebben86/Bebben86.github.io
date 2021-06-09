@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #f1f1f1;
+    color: #910000;
+    height: 200px;
+    font-size: larger;
+}
+
+.left {
+    flex: 15%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-right: 5px solid #910000;
+}
+
+.main {
+    flex: 65%;
+    background-color: white;
+    padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+.right {
+    flex: 20%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-left: 5px solid #910000;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    color: #f1f1f1;
+    background: #910000;
+}
+
+.employeeWrapper {
+    position: relative;
+    border: 0px solid black;
+}
+
+.avatar {
+    width: 130px;
+    border: 1px solid #910000;
+    border-radius: 5px;
+    float: left;
+    position: static;
+}
+
+.empOfMonth {
+    width: 150px;
+    border: 1px solid black;
+    float: left;
+    position: relative;
+}
+
+.aboutMeName {
+    float: clear;
+    
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.aboutMeTitle {
+    position: relative;
+    
+    font-style: italic;
+    font-size: 0.7em;
+}
+
+.productImage {
+    width: 400px;
+    border: 3px solid #910000;
+    border-radius: 5px;
+}
+
+.productName {
+    font-size: 1.2em;
+}
+
+.tdProduct {
+    width: 150px;
+}
+
+.productAlignment {
+    width: 70%;	
+}
+
+.inStock {
+    width: 20px;
+}
+
+.navbar {
+    display: flex;
+    background-color: #910000;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
