@@ -17,3 +17,7 @@ p {
 li{
 font-size: 1.5em;
 }
+
+.cssValidationIcon{
+  border:0;width:88px;height:31px
+}
