@@ -1,23 +1,71 @@
-body {
-  background-color: rgb(233, 233, 233);
-  font-family: "Ubuntu", sans-serif;
-  color: black;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700,600');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+:root{
+  --defaultLinkText: #525252;
+  --defaultBoxWidth: 450px;
+  --defaultBoxBG: rgb(193, 207, 192);
+  --defaultBoxRadius: 20px;
+  --defaultBoxShadow: 0 0 20px -5px rgba(107, 122, 161);
+  --defaultBoxBorderStyle: rgb(17, 50, 77) 4px solid;
+
+}
+
+body{
+  font-family: 'Ubuntu', 'Open Sans', sans-serif;
+  background-color:rgb(231,224,201);
+  background-size: cover;
+  margin: 0 auto 0 auto;  
+  width:100%; 
+  text-align:center;
+  margin: 30px 0px 30px 0px;   
+}
+
+p{
+  font-size:12px;
+  text-decoration: none;
+  
+}
+
+h1{
+  font-size:1.5em;
+  color: #525252;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box{
+  background:var(--defaultBoxBG);
+  width: var(--defaultBoxWidth);
+  border-radius: var(--defaultBoxRadius);
+  margin: 0 auto 0 auto;
+  padding:0px 0px 200px 0px;
+  border: var(--defaultBoxBorderStyle);
+  box-shadow: var(--defaultBoxShadow); 
+}
+
+.box2{
+  background:var(--defaultBoxBG);
+  width: var(--defaultBoxWidth);
+  border-radius: var(--defaultBoxRadius);
+  margin: 0 auto 0 auto;
+  margin-top: 20px;
+  padding:50px 0px 200px 0px;
+  border: var(--defaultBoxBorderStyle);
+  box-shadow: var(--defaultBoxShadow);  
+}
+
+.about{
+  color: #525252;
   font-size: 0.8em;
-  max-width: 600px;
-  margin: 0 auto;
 }
-h1 {
-  color: #910000;
-}
-p {
-  color: black;
-  font-size: 1.5em;
+a{
+  color: var(--defaultLinkText);
 }
 
-li{
-font-size: 1.5em;
-}
-
-.cssValidationIcon{
-  border:0;width:88px;height:31px
+a:hover{
+  font-weight: bold;
 }
