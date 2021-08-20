@@ -1,35 +1,46 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:700,600');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+/* light/default theme */
 :root{
-  --defaultLinkText: #525252;
+  --defaultLinkText:rgb(82,82,82);
   --defaultBoxWidth: 450px;
   --defaultBoxBG: rgb(193, 207, 192);
   --defaultBoxRadius: 20px;
   --defaultBoxShadow: 0 0 20px -5px rgba(107, 122, 161);
   --defaultBoxBorderStyle: rgb(17, 50, 77) 4px solid;
+  --defaultBG: rgb(231,224,201);
+  --defaultTextColor: rgb(82,82,82);
+}
 
+/* dark theme */
+.dark-mode {
+  --defaultLinkText: rgb(238, 238, 238);
+  --defaultBoxBG: rgb(20, 30, 97);
+  --defaultBoxShadow: 0 0 20px -5px rgba(107, 122, 161);
+  --defaultBoxBorderStyle: rgb(120, 122, 145) 4px solid;
+  --defaultBG: rgb(15, 4, 76);
+  --defaultTextColor: rgb(238, 238, 238);
 }
 
 body{
   font-family: 'Ubuntu', 'Open Sans', sans-serif;
-  background-color:rgb(231,224,201);
+  background-color:var(--defaultBG);
   background-size: cover;
   margin: 0 auto 0 auto;  
   width:100%; 
   text-align:center;
-  margin: 30px 0px 30px 0px;   
+  margin: 30px 0px 30px 0px;
+  color: var(--defaultTextColor);   
 }
 
 p{
   font-size:12px;
-  text-decoration: none;
-  
+  text-decoration: none; 
 }
 
 h1{
   font-size:1.5em;
-  color: #525252;
 }
 
 table{
@@ -58,10 +69,10 @@ table{
   box-shadow: var(--defaultBoxShadow);  
 }
 
-.about{
-  color: #525252;
+.about{ 
   font-size: 0.8em;
 }
+
 a{
   color: var(--defaultLinkText);
 }
