@@ -6,19 +6,19 @@
   --defaultLinkText:rgb(82,82,82);
   --defaultBoxWidth: 450px;
   --defaultBoxBG: rgb(193, 207, 192);
-  --defaultBoxRadius: 20px;
+  --defaultBoxRadius: 10px;
   --defaultBoxShadow: 0 0 20px -5px rgba(107, 122, 161);
-  --defaultBoxBorderStyle: rgb(17, 50, 77) 4px solid;
+  --defaultBoxBorderStyle: rgb(17, 50, 77) 2px solid;
   --defaultBG: rgb(231,224,201);
   --defaultTextColor: rgb(82,82,82);
 }
 
-/* dark theme */
+/* dark theme  */
 .dark-mode {
   --defaultLinkText: rgb(238, 238, 238);
   --defaultBoxBG: rgb(20, 30, 97);
   --defaultBoxShadow: 0 0 20px -5px rgba(107, 122, 161);
-  --defaultBoxBorderStyle: rgb(120, 122, 145) 4px solid;
+  --defaultBoxBorderStyle: rgb(120, 122, 145) 2px solid;
   --defaultBG: rgb(15, 4, 76);
   --defaultTextColor: rgb(238, 238, 238);
 }

@@ -6,6 +6,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".box2").hide().fadeIn(1500);
 });
+
 //Toggle dark mode
 function themeToggler() {
   var element = document.body;
