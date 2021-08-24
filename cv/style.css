@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Benne');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+:root{
+	--defaultTextColor: #454545;
+}
+
+
 body {
 	background-color: white;
 	min-height: 100vh;
 	max-width: 700px; 
     margin: 0 auto;
-	color: #454545;
+	color: var(--defaultTextColor);
 	padding-bottom: 50px;
+}
+
+a {
+	color: var(--defaultTextColor);
 }
 h1 {
 	font-family: "Benne", Georgia;
@@ -12,7 +24,7 @@ h1 {
 }
 
 p {	
-	font-family: times new roman, "Benne", Verdana;
+	font-family: "Ubuntu", "Benne", Verdana;
 	font-size: 1em;
 }
 hr {
@@ -24,7 +36,7 @@ img {
 	width: 150px;
 }
 table{
-	font-family: times new roman, "Benne", Verdana;
+	font-family: "Ubuntu",times new roman, "Benne", Verdana;
 	font-size: 1em;
 	color: #454545;
 	border: 0px solid black;
@@ -58,7 +70,7 @@ td{
 }
 .jobTitle{
 	font-style: italic;
-	padding 0px;
+	padding: 0px;
 }
 .references{
 	font-weight: bold;
@@ -71,4 +83,9 @@ td{
 }
 .tdTopNoborderReferences{
 	width: 20%;
+}
+
+.pdfButton{
+	margin-left: 400px;
+	margin-top: -65px;
 }
