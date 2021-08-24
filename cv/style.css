@@ -3,6 +3,8 @@
 
 :root{
 	--defaultTextColor: #454545;
+	--defaultTextFont: 'Ubuntu', Verdana;
+	--defaultHeadlineFont: 'Benne', Georgia;
 }
 
 
@@ -19,12 +21,13 @@ a {
 	color: var(--defaultTextColor);
 }
 h1 {
-	font-family: 'Benne', Georgia;
+	font-family: var(--defaultHeadlineFont);
 	font-weight: bold;
+	text-transform: uppercase;
 }
 
 p {	
-	font-family: 'Ubuntu', Verdana;
+	font-family: var(--defaultTextFont);
 	font-size: 1em;
 }
 hr {
@@ -36,9 +39,9 @@ img {
 	width: 150px;
 }
 table{
-	font-family: 'Ubuntu', Verdana;
+	font-family: var(--defaultTextFont);
 	font-size: 1em;
-	color: #454545;
+	color: var(--defaultTextColor);
 	border: 0px solid black;
 	width: 100%;
 }
@@ -47,8 +50,9 @@ td{
 	padding-left: 5px;
 }
 .myh3{
-	font-family: 'Benne', Georgia;
+	font-family: var(--defaultHeadlineFont);
 	font-size: 1.5em;
+	text-transform: uppercase;
 	padding-left: 20px;
 	padding-bottom: 0px;
 }
