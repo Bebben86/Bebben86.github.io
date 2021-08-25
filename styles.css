@@ -47,15 +47,21 @@ table{
   margin-left: auto;
   margin-right: auto;
 }
+img{
+  width: 50%;
+  border: var(--defaultBoxBorderStyle);
+  border-radius: var(--defaultBoxRadius);
+}
 
 .box{
   background:var(--defaultBoxBG);
   width: var(--defaultBoxWidth);
   border-radius: var(--defaultBoxRadius);
   margin: 0 auto 0 auto;
-  padding:0px 0px 200px 0px;
+  padding:20px 0px 20px 0px;
   border: var(--defaultBoxBorderStyle);
-  box-shadow: var(--defaultBoxShadow); 
+  box-shadow: var(--defaultBoxShadow);
+  margin-bottom: 20px; 
 }
 
 .box2{
@@ -79,4 +85,17 @@ a{
 
 a:hover{
   font-weight: bold;
+}
+
+@media only screen and (max-width: 400px) {
+	body{
+		max-width: 400px;
+		font-size: 1.05em;
+	}
+  .box{
+    width: 95%;
+  }
+  .about{
+    padding: 20px;
+  }
 }
