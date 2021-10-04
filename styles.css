@@ -1,101 +1,105 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:700,600');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700,600");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@551&display=swap');
 
-/* light/default theme */
-:root{
-  --defaultLinkText:rgb(82,82,82);
-  --defaultBoxWidth: 450px;
-  --defaultBoxBG: rgb(193, 207, 192);
-  --defaultBoxRadius: 10px;
-  --defaultBoxShadow: 0 0 20px -5px rgba(107, 122, 161);
-  --defaultBoxBorderStyle: rgb(17, 50, 77) 2px solid;
-  --defaultBG: rgb(231,224,201);
-  --defaultTextColor: rgb(82,82,82);
+:root {
+  --LinkHoverColor: rgb(109, 109, 109);
+  --defaultTextColor: black;
 }
 
-/* dark theme  */
-.dark-mode {
-  --defaultLinkText: rgb(238, 238, 238);
-  --defaultBoxBG: rgb(20, 30, 97);
-  --defaultBoxShadow: 0 0 20px -5px rgba(107, 122, 161);
-  --defaultBoxBorderStyle: rgb(120, 122, 145) 2px solid;
-  --defaultBG: rgb(15, 4, 76);
-  --defaultTextColor: rgb(238, 238, 238);
-}
-
-body{
-  font-family: 'Ubuntu', 'Open Sans', sans-serif;
-  background-color:var(--defaultBG);
-  background-size: cover;
-  margin: 0 auto 0 auto;  
-  width:100%; 
-  text-align:center;
-  margin: 30px 0px 30px 0px;
-  color: var(--defaultTextColor);   
-}
-
-p{
-  font-size:12px;
-  text-decoration: none; 
-}
-
-h1{
-  font-size:1.5em;
-}
-
-table{
-  margin-left: auto;
-  margin-right: auto;
-}
-img{
-  width: 50%;
-  border: var(--defaultBoxBorderStyle);
-  border-radius: var(--defaultBoxRadius);
-}
-
-.box{
-  background:var(--defaultBoxBG);
-  width: var(--defaultBoxWidth);
-  border-radius: var(--defaultBoxRadius);
-  margin: 0 auto 0 auto;
-  padding:20px 0px 20px 0px;
-  border: var(--defaultBoxBorderStyle);
-  box-shadow: var(--defaultBoxShadow);
-  margin-bottom: 20px; 
-}
-
-.box2{
-  background:var(--defaultBoxBG);
-  width: var(--defaultBoxWidth);
-  border-radius: var(--defaultBoxRadius);
-  margin: 0 auto 0 auto;
-  margin-top: 20px;
-  padding:50px 0px 200px 0px;
-  border: var(--defaultBoxBorderStyle);
-  box-shadow: var(--defaultBoxShadow);  
-}
-
-.about{ 
-  font-size: 0.8em;
+body {
+  font-family: "Ubuntu", "Open Sans", sans-serif;
+  margin-left: 60px;
+  font-weight: bold;
+  /* font-size: 1em; */
 }
 
 a{
-  color: var(--defaultLinkText);
+  color: var(--defaultTextColor);
+  text-decoration: none;
+}
+a:hover{
+  color: var(--LinkHoverColor);
+}
+a:visited{
+  color: var(--defaultTextColor);
+}
+td{
+  padding-left: 15px;
 }
 
-a:hover{
-  font-weight: bold;
+.link_table{
+  margin-top: 5px;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 700px;
+}
+
+.avatar{
+  width: 350px;
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+  border-radius: 10px;
+  box-shadow:5px 5px 5px gray;
+}
+/* The red textbox */
+.main{
+  margin-left: 25%;
+  margin-top: 350px;
+  margin-right: 5px;
+  background: rgb(218, 0, 0);
+  position: relative;
+  width: 350px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: normal;
+  box-shadow:10px 5px 5px gray;
+  overflow: hidden;
+  transform: rotate(5deg);
+}
+
+.headline{
+  font-family: "Roboto Mono", sans-serif;
+  /* font-size: 4em; */
+  font-size: 60px;
+  font-weight: 800;
+  text-shadow:2px 2px 2px gray;
+}
+
+.reddot{
+  font-family: "Roboto Mono", sans-serif;
+  color: red;
+  /* font-size: 5.5em; */
+  font-size: 80px;
+  text-shadow:2px 2px 2px gray;
+}
+
+.icon{
+  width: 35px;
 }
 
 @media only screen and (max-width: 400px) {
-	body{
-		max-width: 400px;
-		font-size: 1.05em;
-	}
-  .box{
-    width: 95%;
+  
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
   }
-  .about{
-    padding: 20px;
+  .headline{
+    font-size: 30px;
+  }
+  .main{
+    width: 200px;
+  }
+  .avatar{
+    width: 300px;
   }
 }
